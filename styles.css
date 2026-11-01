@@ -104,3 +104,4 @@ header{background:#f7f2ff}.hero{background:radial-gradient(ellipse at 90% 45%,#e
 .login-card .field input{width:100%;font-size:16px;min-height:48px}.password-toggle{display:flex;gap:10px;align-items:center;font-size:13px;min-height:44px}.password-toggle input{width:18px;height:18px;accent-color:#66418b}
 .login-submit{width:100%;margin-top:12px}.login-card .login-status{padding:14px;background:#f1e8fb;border-radius:8px;font-size:13px;margin-top:22px}.login-back{display:inline-flex;align-items:center;min-height:44px;font-size:13px;color:#66418b}
 @media(max-width:400px){.login-main{padding:28px 5%}.login-card{padding:24px 20px}.login-card h1{font-size:25px}}
+.access-help{margin:20px 0;font-size:13px;line-height:1.7;color:var(--muted)}.access-help summary{cursor:pointer;color:var(--ink);min-height:44px;padding-block:10px;font-weight:600}
