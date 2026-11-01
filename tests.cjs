@@ -1,0 +1,15 @@
+const assert=require('node:assert/strict');
+const {validateProduct,validateCatalog,parseCSV,safeImage,samples}=require('./app.js');
+const valid={id:'one',name:'Flor',description:'Una flor',image:'https://example.com/flor.png',prices:{papel:'2500',plastico:'',holografico:5000}};
+assert.deepEqual(validateProduct(valid).prices,{holografico:5000,papel:2500});
+assert.throws(()=>validateProduct({...valid,image:'javascript:alert(1)'}));
+assert.throws(()=>validateProduct({...valid,prices:{papel:-1}}));
+assert.throws(()=>validateProduct({...valid,prices:{papel:1.2}}));
+assert.throws(()=>validateProduct({...valid,prices:{}}));
+assert.throws(()=>validateCatalog([valid,valid]));
+assert.throws(()=>validateCatalog({}));
+assert.equal(validateCatalog(samples,true).length,8);
+assert.equal(safeImage('http://example.com/a.png'),false);
+assert.deepEqual(parseCSV('\uFEFFnombre,imagen,descripcion,holografico,papel,plastico\r\n"Flor, linda",https://example.com/a.png,"Dice ""hola""\ny sigue",5000,,3500\r\n'),[['nombre','imagen','descripcion','holografico','papel','plastico'],['Flor, linda','https://example.com/a.png','Dice "hola"\ny sigue','5000','','3500']]);
+assert.throws(()=>parseCSV('"sin cerrar'));
+console.log('OK: validación de catálogo, materiales, URLs y CSV.');

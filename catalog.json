@@ -1,0 +1,114 @@
+[
+  {
+    "id": "demo-0",
+    "name": "Flor con flow",
+    "description": "Una flor para alegrar tus días.",
+    "symbol": "✿",
+    "color": "#e9dfef",
+    "image": "",
+    "demo": true,
+    "prices": {
+      "holografico": 5000,
+      "papel": 2500,
+      "plastico": 3500
+    }
+  },
+  {
+    "id": "demo-1",
+    "name": "Buena cara",
+    "description": "Un recordatorio de buscar el lado bonito.",
+    "symbol": "☺",
+    "color": "#e8edda",
+    "image": "",
+    "demo": true,
+    "prices": {
+      "holografico": 5000,
+      "papel": 2500,
+      "plastico": 3500
+    }
+  },
+  {
+    "id": "demo-2",
+    "name": "Amor del bueno",
+    "description": "Pequeñas dosis de amor para llevar.",
+    "symbol": "♥",
+    "color": "#f1dfdf",
+    "image": "",
+    "demo": true,
+    "prices": {
+      "holografico": 5000,
+      "papel": 2500,
+      "plastico": 3500
+    }
+  },
+  {
+    "id": "demo-3",
+    "name": "Energía bonita",
+    "description": "Un rayo de actitud para tus favoritos.",
+    "symbol": "ϟ",
+    "color": "#efe8d8",
+    "image": "",
+    "demo": true,
+    "prices": {
+      "holografico": 5000,
+      "papel": 2500,
+      "plastico": 3500
+    }
+  },
+  {
+    "id": "demo-4",
+    "name": "Estrella de tu mundo",
+    "description": "Brilla a tu manera, todos los días.",
+    "symbol": "✦",
+    "color": "#e0e6f0",
+    "image": "",
+    "demo": true,
+    "prices": {
+      "holografico": 5000,
+      "papel": 2500,
+      "plastico": 3500
+    }
+  },
+  {
+    "id": "demo-5",
+    "name": "Flower power",
+    "description": "Un jardín de ideas para tu cuaderno.",
+    "symbol": "❀",
+    "color": "#e8e5d7",
+    "image": "",
+    "demo": true,
+    "prices": {
+      "holografico": 5000,
+      "papel": 2500,
+      "plastico": 3500
+    }
+  },
+  {
+    "id": "demo-6",
+    "name": "Corazón creativo",
+    "description": "Para quienes hacen todo con corazón.",
+    "symbol": "♡",
+    "color": "#ede0e9",
+    "image": "",
+    "demo": true,
+    "prices": {
+      "holografico": 5000,
+      "papel": 2500,
+      "plastico": 3500
+    }
+  },
+  {
+    "id": "demo-7",
+    "name": "Un toque de magia",
+    "description": "Haz extraordinarias las cosas pequeñas.",
+    "symbol": "✳",
+    "color": "#e0e9e4",
+    "image": "",
+    "demo": true,
+    "prices": {
+      "holografico": 5000,
+      "papel": 2500,
+      "plastico": 3500
+    }
+  }
+]

@@ -1,0 +1,6 @@
+assets/*-preview.png
+assets/sticker-collage-original.png
+node_modules/
+.env
+.env.*
+assets/logo-original.png
