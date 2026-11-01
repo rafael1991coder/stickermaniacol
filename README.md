@@ -1,12 +1,17 @@
-# Stickermanía Col — primer borrador
+# StickerManiaCol — primer borrador
 
 Tienda estática en español, adaptable a celulares y lista para GitHub Pages. No requiere instalación ni compilación.
+
+Sitio publicado: https://rafael1991coder.github.io/stickermaniacol/
 
 ## Abrir localmente
 
 Con Node.js instalado, ejecuta `node server.cjs` y abre http://localhost:4173. Tienda: `/index.html`. Administración: `/admin.html`.
 
 ## Funciones
+
+- Logo y favicon con el mismo símbolo de sticker, generados con IA; fuentes del arte en assets/logo-prompt.txt.
+- Selector aleatorio de todo el catálogo: animación de aproximadamente cuatro segundos, ganador equiprobable, detalles, selección de material y agregado al carrito. Respeta la preferencia de movimiento reducido.
 
 - Búsqueda de diseños y filtros por material.
 - Precios independientes para holográfico, papel y plástico blanco, en COP.
@@ -17,7 +22,7 @@ Con Node.js instalado, ejecuta `node server.cjs` y abre http://localhost:4173. T
 
 ## Publicar en GitHub Pages
 
-1. Sube `index.html`, `admin.html`, `styles.css`, `app.js`, `catalog.json`, `.nojekyll` y la carpeta `assets/` a un repositorio.
+1. Sube `index.html`, `admin.html`, `styles.css`, `app.js`, `surprise.js`, `catalog.json`, `.nojekyll` y la carpeta `assets/` a un repositorio.
 2. En Settings → Pages, selecciona Deploy from a branch y la carpeta raíz de tu rama.
 3. En la administración, elimina los ejemplos y agrega tus diseños. Exporta el catálogo.
 4. Reemplaza `catalog.json` en el repositorio con el archivo exportado y confirma el cambio. Los visitantes nuevos verán el catálogo publicado.
