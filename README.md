@@ -50,6 +50,8 @@ Precios enteros, sin símbolo de moneda ni separadores. Puedes entrecomillar tex
 `node --check app.js` y `node tests.cjs` verifican sintaxis, validación del catálogo e importación CSV. No hay pagos en línea; envío, existencias y pago se confirman por WhatsApp.
 
 
-## Estado del acceso administrativo
+## Acceso administrativo privado
 
-La ruta admin.html muestra el formulario de acceso y deniega el ingreso mientras no exista un servicio de autenticación privado. No compara contraseñas en JavaScript, no envía los campos a un servicio ni guarda credenciales. La validación real está pendiente de conectar al Drive personal indicado por el propietario. El antiguo panel de borrador se conservó fuera del repositorio para su integración futura. Las funciones de administración descritas anteriormente corresponden a ese panel. El formulario público todavía no permite iniciar sesión.
+admin.html redirige a la aplicación de Google Apps Script, restringida a la cuenta personal del propietario. Allí se comprueban el usuario y la contraseña antes de entregar el panel. El verificador se guarda en un archivo privado de Drive; no hay credenciales ni verificadores en este repositorio. Diez intentos fallidos bloquean el acceso durante quince minutos.
+
+Al recargar o usar Cerrar sesión se vuelve a pedir el usuario y la contraseña. El catálogo conserva el flujo de edición local, exportación y publicación manual del JSON; autenticarse no sincroniza automáticamente los cambios con GitHub.
