@@ -49,3 +49,7 @@ Precios enteros, sin símbolo de moneda ni separadores. Puedes entrecomillar tex
 
 `node --check app.js` y `node tests.cjs` verifican sintaxis, validación del catálogo e importación CSV. No hay pagos en línea; envío, existencias y pago se confirman por WhatsApp.
 
+
+## Estado del acceso administrativo
+
+La ruta admin.html muestra el formulario de acceso y deniega el ingreso mientras no exista un servicio de autenticación privado. No compara contraseñas en JavaScript, no envía los campos a un servicio ni guarda credenciales. La validación real está pendiente de conectar al Drive personal indicado por el propietario. El antiguo panel de borrador se conservó fuera del repositorio para su integración futura. Las funciones de administración descritas anteriormente corresponden a ese panel. El formulario público todavía no permite iniciar sesión.
