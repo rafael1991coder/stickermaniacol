@@ -52,6 +52,8 @@ Precios enteros, sin símbolo de moneda ni separadores. Puedes entrecomillar tex
 
 ## Acceso administrativo privado
 
-admin.html redirige a la aplicación de Google Apps Script, restringida a la cuenta personal del propietario. Allí se comprueban el usuario y la contraseña antes de entregar el panel. El verificador se guarda en un archivo privado de Drive; no hay credenciales ni verificadores en este repositorio. Diez intentos fallidos bloquean el acceso durante quince minutos.
+admin.html enlaza a la aplicación de Google Apps Script, restringida a la cuenta personal del propietario. Allí se comprueban el usuario y la contraseña antes de entregar el panel. El verificador se guarda en un archivo privado de Drive; no hay credenciales ni verificadores en este repositorio. Diez intentos fallidos bloquean el acceso durante quince minutos.
 
 Al recargar o usar Cerrar sesión se vuelve a pedir el usuario y la contraseña. El catálogo conserva el flujo de edición local, exportación y publicación manual del JSON; autenticarse no sincroniza automáticamente los cambios con GitHub.
+
+Si Google muestra un error antes del formulario, abre el acceso en una ventana privada con únicamente la cuenta personal del propietario. Apps Script no admite varias cuentas de Google simultáneas. La página de acceso muestra esta ayuda antes de abrir el servicio.
